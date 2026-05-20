@@ -1,0 +1,145 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(180deg, #C8E1F4 0%, #f8f9fa 100%);
+    min-height: 100vh;
+}
+
+.rounded-4 { border-radius: 1.2rem !important; }
+.rounded-top-4 { border-top-left-radius: 1.5rem !important; border-top-right-radius: 1.5rem !important; }
+.navbar-brand { white-space: nowrap; }
+
+.transition-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.transition-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+}
+
+.nav-hover {
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+.nav-hover:hover {
+    color: #00075F !important;
+    transform: translateY(-2px);
+}
+
+.bell-container { cursor: pointer; }
+.bell-icon {
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.bell-container:hover .bell-icon {
+    animation: swing 0.5s ease forwards;
+}
+
+@keyframes swing {
+    20% { transform: rotate(15deg) scale(1.2); }
+    40% { transform: rotate(-10deg) scale(1.2); }
+    60% { transform: rotate(5deg) scale(1.2); }
+    80% { transform: rotate(-5deg) scale(1.2); }
+    100% { transform: rotate(0deg) scale(1.2); }
+}
+
+.btn-care-hover { transition: all 0.3s ease; }
+.btn-care-hover:hover {
+    background-color: #00a8e8 !important;
+    color: white !important;
+    box-shadow: 0 4px 15px rgba(0, 168, 232, 0.3);
+    transform: scale(1.02);
+}
+
+.action-card {
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;
+}
+.action-card:hover {
+    transform: translateY(-4px) scale(1.02);
+    filter: brightness(1.1);
+    box-shadow: 0 10px 20px rgba(93, 156, 236, 0.4) !important;
+}
+.action-card:active {
+    transform: translateY(2px) scale(0.98);
+    filter: brightness(0.95);
+}
+
+.btn-shortcut { transition: all 0.2s ease; }
+.btn-shortcut:hover {
+    background-color: #0079C8 !important;
+    color: white !important;
+    border-color: #0079C8 !important;
+}
+
+.notification-item { transition: background 0.2s; }
+.notification-item:hover { background-color: #f8fbff !important; }
+
+.custom-checkbox .form-check-input {
+    background-color: #C8E1F4;
+    cursor: pointer;
+}
+.custom-checkbox .form-check-input:checked {
+    background-color: #0079C8;
+    border-color: #0079C8;
+}
+
+.table-hover tbody tr:hover td {
+    background-color: rgba(0, 121, 200, 0.05);
+    border-radius: 8px;
+}
+
+.alert-popover {
+    position: absolute;
+    top: -20px;
+    right: 15%;
+    z-index: 100;
+    width: 280px;
+    border: 2px solid #dc3545;
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: opacity 0.3s ease; 
+}
+
+.browser-notification {
+    position: fixed;
+    top: 70px;
+    left: 80px;
+    width: 320px;
+    z-index: 1050;
+    border: 1px solid #e0e0e0;
+    transition: opacity 0.3s ease;
+}
+
+.system-notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    z-index: 1050;
+    border: 1px solid #e0e0e0;
+    transition: opacity 0.3s ease;
+}
+
+.system-action-btn {
+    color: #555 !important;
+    background-color: transparent !important;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.system-action-btn:hover {
+    background-color: #e2e6ea !important;
+    color: #000 !important;
+}
+
+.custom-scrollbar-x::-webkit-scrollbar {
+    height: 8px;
+}
+.custom-scrollbar-x::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+}
+.custom-scrollbar-x::-webkit-scrollbar-thumb {
+    background: #5998C2;
+    border-radius: 10px;
+}
+.custom-scrollbar-x::-webkit-scrollbar-thumb:hover {
+    background: #00075F;
+}

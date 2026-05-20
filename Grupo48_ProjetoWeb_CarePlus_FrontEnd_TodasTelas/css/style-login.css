@@ -1,0 +1,67 @@
+/* Estilos específicos para a página de Login (fundo degradê) */
+.login-body {
+    background: linear-gradient(135deg, #00075F 0%, #0079C8 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: none;
+    width: 100%;
+    max-width: 900px;
+}
+
+.nav-login .nav-link {
+    color: #6c757d;
+    font-weight: 600;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 0;
+    transition: all 0.3s;
+}
+
+.nav-login .nav-link.active {
+    background-color: transparent !important;
+    color: #0079C8 !important;
+    border-bottom: 3px solid #0079C8 !important;
+}
+
+.toggle-login-type {
+    background-color: #f1f4f8;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.btn-toggle-active {
+    background-color: #151A40 !important;
+    color: white !important;
+    border-radius: 8px !important;
+}
+
+.login-input {
+    background-color: #C8E1F4 !important;
+    border: none !important;
+    height: 50px;
+    border-radius: 8px !important;
+}
+
+.login-input::placeholder {
+    color: #5998C2;
+}
+
+.btn-enter {
+    background-color: #0079C8;
+    border: none;
+    height: 50px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-enter:hover {
+    background-color: #00075F;
+    transform: translateY(-2px);
+}

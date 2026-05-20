@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Plus - Página Inicial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light relative">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mb-4 py-3">
+        <div class="container">
+            <a class="navbar-brand text-primary fw-bold fs-2" href="tela01-dashboard.html">Care<span class="text-info">Plus</span></a>
+            
+            <div class="ms-auto d-flex align-items-center">
+                <input type="text" class="form-control form-control-sm me-4 rounded-pill px-3 bg-light border-0 d-none d-md-block" placeholder="Pesquisar...">
+                
+                <a href="tela01-dashboard.html" class="nav-link px-3 fw-bold text-primary border-bottom border-primary border-2 text-nowrap">Página Inicial</a>
+                <a href="tela02-agendamento.html" class="nav-link px-3 text-info nav-hover text-nowrap">Agendamentos</a>
+                <a href="tela07-extratoperfil.html" class="nav-link px-3 text-info nav-hover text-nowrap">Meu Perfil</a>
+                
+                <a href="tela01-popupautorizacao.html" class="ms-3 position-relative bell-container text-decoration-none" aria-label="Notificações">
+                    <span class="badge bg-danger rounded-circle position-absolute top-0 start-100 translate-middle p-1 border border-light"> </span>
+                    <span class="fs-5 bell-icon">🔔</span>
+                </a>
+                <a href="login.html" class="ms-2 text-info text-decoration-none transition-hover" aria-label="Sair" title="Sair">
+                    <i class="fa-solid fa-right-from-bracket fs-5"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="bg-white rounded-4 shadow-sm p-4 p-md-5 border-top border-primary border-4 mt-4 mb-5">
+            
+            <h2 class="text-primary fw-bold fs-1 mb-1" style="color: #00075F !important;">Olá, <span class="text-info">Paciente!</span></h2>
+            <p class="text-muted small mb-4">Bem-vinda ao seu painel Care Plus. Aqui está o resumo da sua saúde hoje:</p>
+            <hr class="text-info opacity-25 mb-5">
+
+            <div class="row g-5">
+                
+                <div class="col-lg-8">
+                    
+                    <div class="card border border-info border-opacity-25 shadow-sm p-4 rounded-4 mb-4" style="background-color: #f8fbff;">
+                        
+                        <div class="d-flex justify-content-between align-items-start mb-4">
+                            <h4 class="fw-bold m-0" style="color: #00075F;">Próximo Agendamento</h4>
+                            <div class="text-end">
+                                <span class="badge bg-warning text-dark rounded-pill px-3 py-1 mb-1 shadow-sm">Faltam <span id="countdown-timer">--h --m</span></span>
+                                <span class="badge bg-info text-white rounded-pill px-3 py-1 shadow-sm d-block mt-1">Confirmado</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-4 p-4 shadow-sm border-start border-info border-4 mb-3 transition-hover">
+                            <div class="row align-items-center">
+                                <div class="col-md-3 text-center border-end border-light">
+                                    <h2 class="text-primary fw-bold mb-0">20</h2>
+                                    <span class="text-muted text-uppercase small">Junho 2026</span><br>
+                                    <span class="text-info fw-bold fs-5">14:30</span>
+                                </div>
+                                <div class="col-md-9 ps-md-4 mt-3 mt-md-0">
+                                    <h5 class="fw-bold text-primary mb-1">Dra. Camila Ribeiro</h5>
+                                    <p class="text-muted small mb-3">Clínica Geral</p>
+                                    <p class="small mb-1 text-secondary">📍 R. Fidêncio Ramos, 302 - Vila Olímpia, São Paulo</p>
+                                    <p class="small text-warning fw-bold mb-0 mt-2">
+                                        ⚠️ Trânsito moderado - Recomendamos sair 15 min antes.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex flex-wrap gap-3 mt-4">
+                            <button class="btn btn-primary rounded-pill px-4 py-2 fw-bold text-white shadow-sm btn-care-hover" style="background-color: #5d9cec; border: none;">Ver Rota no Mapa</button>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-4">
+                            <div class="card action-card shadow-sm border-0 rounded-4 text-center p-4 text-white h-100 d-flex flex-column justify-content-center" style="background-color: #5d9cec;" data-nav="agendamento" role="button" tabindex="0">
+                                <i class="fa-solid fa-calendar-days fs-1 mb-3"></i>
+                                <h6 class="fw-bold mb-0">Agendamentos</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card action-card shadow-sm border-0 rounded-4 text-center p-4 text-white h-100 d-flex flex-column justify-content-center" style="background-color: #5d9cec;" data-nav="reagendamento" role="button" tabindex="0">
+                                <i class="fa-solid fa-calendar-plus fs-1 mb-3"></i>
+                                <h6 class="fw-bold mb-0">Reagendamento</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card action-card shadow-sm border-0 rounded-4 text-center p-4 text-white h-100 d-flex flex-column justify-content-center" style="background-color: #5d9cec;" data-nav="progresso" role="button" tabindex="0">
+                                <i class="fa-solid fa-heart-pulse fs-1 mb-3"></i>
+                                <h6 class="fw-bold mb-0">Care+</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card border border-info border-opacity-25 shadow-sm rounded-4 p-4 transition-hover" style="background-color: #f8fbff;">
+                        <h4 class="fw-bold mb-4" style="color: #00075F;">Área do Paciente</h4>
+                        <div class="notification-item d-flex align-items-center p-3 border-bottom bg-white rounded-3 mb-2 shadow-sm">
+                            <span class="badge bg-info p-2 me-3"><i class="fa-solid fa-bullhorn"></i></span>
+                            <p class="mb-0 small text-secondary">
+                                <strong class="text-dark">29/10/2025:</strong> Benefício Desbloqueado! <a href="tela06-progresso.html" class="text-info">Venha ver</a> um pouco mais dos benefícios disponíveis ao atingir o <span class="text-warning fw-bold">Nível Ouro Care+</span>.
+                            </p>
+                        </div>
+                        <div class="notification-item d-flex align-items-center p-3 border-bottom bg-white rounded-3 shadow-sm">
+                            <span class="badge bg-success p-2 me-3"><i class="fa-solid fa-check"></i></span>
+                            <p class="mb-0 small text-secondary">
+                                <strong class="text-dark">12/10/2025:</strong> Medalha Desbloqueada! Parabéns! Você desbloqueou a medalha 'Paciente Pontual'. <a href="tela06-progresso.html" class="text-info">Confira!</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 d-flex flex-column">
+                    
+                    <div class="card border-0 shadow-sm rounded-4 p-4 mb-4 text-center transition-hover" style="background: linear-gradient(135deg, #FFF 0%, #F8FBFF 100%);">
+                        <p class="text-muted small mb-2">Você é um paciente <strong class="text-warning">Ouro!</strong></p>
+                        <div class="position-relative mx-auto mb-3" style="width: 100px;">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2583/2583344.png" class="img-fluid" alt="Troféu Ouro">
+                        </div>
+                        <div class="progress mb-2" style="height: 10px;">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"></div>
+                        </div>
+                        <p class="small text-muted">Faltam <strong class="text-primary">11 pontos</strong> para o próximo nível!</p>
+                        <a href="tela06-progresso.html" class="text-info small fw-bold text-decoration-none">Consulte os benefícios do seu nível ➔</a>
+                    </div>
+
+                    <div class="card border-0 shadow-sm rounded-4 p-4 mb-4 text-white transition-hover" style="background: linear-gradient(135deg, #0079C8 0%, #0056b3 100%);">
+                        <div class="d-flex justify-content-between mb-4">
+                            <h5 class="fw-bold"><i class="fa-solid fa-id-card me-2"></i>Carteira Digital</h5>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg" width="40" class="bg-white p-1 rounded" alt="QR Code">
+                        </div>
+                        <p class="mb-1 small opacity-75">Número da Carteirinha</p>
+                        <h5 class="fw-bold mb-4">0000.111.222.333-4</h5>
+                        <div class="d-flex justify-content-between align-items-end">
+                            <div>
+                                <p class="mb-0 small opacity-75">Validade</p>
+                                <p class="fw-bold mb-0">12/2028</p>
+                            </div>
+                            <a href="tela07-extratoperfil.html" class="btn btn-light btn-sm rounded-pill fw-bold text-primary px-3">Mais informações ➔</a>
+                        </div>
+                    </div>
+
+                    <div class="card border border-info border-opacity-25 shadow-sm rounded-4 p-4 transition-hover flex-grow-1 d-flex flex-column" style="background-color: #f8fbff;">
+                        <h6 class="fw-bold mb-3" style="color: #00075F;">Atalhos Rápidos</h6>
+                        <div class="row g-2 align-items-stretch flex-grow-1">
+                            <div class="col-6">
+                                <a href="tela07-extratoperfil.html" class="btn btn-light w-100 h-100 p-3 small fw-bold text-secondary border shadow-sm btn-shortcut d-flex align-items-center justify-content-center text-center text-decoration-none">Histórico de Consultas</a>
+                            </div>
+                            <div class="col-6">
+                                <a href="tela02-agendamento.html" class="btn btn-light w-100 h-100 p-3 small fw-bold text-secondary border shadow-sm btn-shortcut d-flex align-items-center justify-content-center text-center text-decoration-none">Médico</a>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn btn-light w-100 h-100 p-3 small fw-bold text-secondary border shadow-sm btn-shortcut d-flex align-items-center justify-content-center text-center">Guias & Tokens</button>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn btn-light w-100 h-100 p-3 small fw-bold text-secondary border shadow-sm btn-shortcut d-flex align-items-center justify-content-center text-center">Dental</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <div id="browserNotification" class="browser-notification bg-white rounded-3 shadow-lg p-3 transition-hover">
+        <p class="small fw-bold mb-2 text-dark">www8.careplus.com.br deseja</p>
+        <div class="d-flex align-items-center mb-3">
+            <i class="fa-regular fa-bell me-2 fs-5 text-secondary"></i>
+            <span class="small fw-medium text-dark">Mostrar notificações</span>
+        </div>
+        <div class="d-flex gap-2 justify-content-end">
+            <button id="btnBloquearBrowser" class="btn btn-light btn-sm rounded-pill border px-3 fw-bold text-muted">Bloquear</button>
+            <button id="btnPermitirBrowser" class="btn btn-light btn-sm rounded-pill border px-3 fw-bold text-primary">Permitir</button>
+        </div>
+    </div>
+
+    <div id="systemNotification" class="system-notification bg-white rounded-3 shadow-lg transition-hover overflow-hidden">
+        
+        <div class="d-flex justify-content-between align-items-center bg-light px-3 py-2 border-bottom">
+            <div class="d-flex align-items-center">
+                    <img src="https://img.icons8.com/color/48/microsoft-outlook-2019--v2.png" width="16" class="me-2" alt="Outlook">
+                <span class="small fw-bold text-dark">Outlook</span>
+            </div>
+            <div class="text-muted d-flex gap-3 align-items-center">
+                <i class="fa-solid fa-ellipsis" role="button"></i>
+                <i class="fa-solid fa-xmark" id="fecharSystemNotif" role="button" style="cursor: pointer;"></i>
+            </div>
+        </div>
+        
+        <div class="p-3 d-flex gap-3 align-items-start">
+            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 45px; height: 45px; font-size: 0.75rem; font-weight: bold; line-height: 1;">
+                Care<br>Plus
+            </div>
+            <div>
+                <h6 class="fw-bold mb-1 small" style="color: #00075F;">CarePlus</h6>
+                <p class="fw-bold small mb-1 text-dark">Sua Consulta Está Próxima! 🩺</p>
+                <p class="small text-muted mb-0" style="font-size: 0.75rem; line-height: 1.4;">Olá, gostaria de lembrar que sua consulta está próxima. Se programe com antecedência para comparecer à Clínica...</p>
+            </div>
+        </div>
+        
+        <div class="d-flex border-top px-2 py-2 bg-light justify-content-between">
+            <button class="btn btn-light btn-sm flex-fill border-0 d-flex flex-column align-items-center system-action-btn" id="btnExcluirNotif">
+                <i class="fa-regular fa-trash-can mb-1 fs-6"></i> <span style="font-size: 0.7rem;">Excluir</span>
+            </button>
+            <button class="btn btn-light btn-sm flex-fill border-0 d-flex flex-column align-items-center system-action-btn border-start border-end rounded-0">
+                <i class="fa-regular fa-flag mb-1 fs-6"></i> <span style="font-size: 0.7rem;">Sinalizador</span>
+            </button>
+            <button class="btn btn-light btn-sm flex-fill border-0 d-flex flex-column align-items-center system-action-btn" id="btnIgnorarNotif">
+                <i class="fa-solid fa-xmark mb-1 fs-6"></i> <span style="font-size: 0.7rem;">Ignorar</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

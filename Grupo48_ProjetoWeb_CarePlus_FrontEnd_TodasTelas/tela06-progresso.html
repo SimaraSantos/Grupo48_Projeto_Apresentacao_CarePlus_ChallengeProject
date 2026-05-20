@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Plus - Área Care+ (Progresso)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mb-4 py-3">
+        <div class="container">
+            <a class="navbar-brand text-primary fw-bold fs-2" href="tela01-dashboard.html">Care<span class="text-info">Plus</span></a>
+            <div class="ms-auto d-flex align-items-center">
+                <input type="text" class="form-control form-control-sm me-4 rounded-pill px-3 bg-light border-0 d-none d-md-block" placeholder="Pesquisar...">
+                <a href="tela01-dashboard.html" class="nav-link px-3 text-info nav-hover text-nowrap">Página Inicial</a>
+                <a href="tela02-agendamento.html" class="nav-link px-3 text-info nav-hover text-nowrap">Agendamentos</a>
+                <a href="tela07-extratoperfil.html" class="nav-link px-3 fw-bold text-primary border-bottom border-primary border-2 text-nowrap">Meu Perfil</a>
+                <a href="tela01-popupautorizacao.html" class="ms-3 position-relative bell-container text-decoration-none" aria-label="Notificações">
+                    <span class="badge bg-danger rounded-circle position-absolute top-0 start-100 translate-middle p-1 border border-light"> </span>
+                    <span class="fs-5 bell-icon">🔔</span>
+                </a>
+                <a href="login.html" class="ms-2 text-info text-decoration-none transition-hover" aria-label="Sair" title="Sair">
+                    <i class="fa-solid fa-right-from-bracket fs-5"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="row g-4 mb-5">
+            
+            <div class="col-lg-8 d-flex flex-column">
+                
+                <div class="d-flex mb-0">
+                    <a href="tela06-progresso.html" class="btn btn-primary rounded-top-4 px-5 py-2 border-bottom-0 active fw-bold text-white shadow-sm text-decoration-none" style="background-color: #5d9cec; border: none;">Progresso</a>
+                    <a href="tela07-extratoperfil.html" class="btn btn-light rounded-top-4 px-5 py-2 border border-bottom-0 text-muted transition-hover text-decoration-none">Extrato</a>
+                </div>
+
+                <div class="bg-white border-top border-primary border-4 rounded-4 shadow-sm p-4 p-md-5 rounded-start-0 flex-grow-1">
+                    <h2 class="fw-bold fs-1 mb-1" style="color: #00075F;">Área <span class="text-info">Care+</span></h2>
+                    <p class="text-muted small mb-5">Acompanhe seu progresso no programa de benefícios, acúmulo de pontos, extrato, entre outros. <a href="tela07-extratoperfil.html" class="text-info fw-bold">Confira! ⭐</a></p>
+
+                    <div class="row g-4 mb-5 align-items-stretch">
+                        <div class="col-md-6">
+                            <div class="card border border-info border-opacity-25 rounded-4 p-4 shadow-sm h-100 transition-hover">
+                                <h6 class="fw-bold mb-3" style="color: #00075F;">Você é um paciente:</h6>
+                                <div class="d-flex align-items-center mb-4">
+                                    <i class="fa-solid fa-certificate text-warning me-2" style="font-size: 2.5rem;"></i>
+                                    <h2 class="fw-bold text-warning mb-0" style="font-size: 2.5rem;">Ouro!</h2>
+                                </div>
+                                <div class="progress mb-3" style="height: 12px; border-radius: 10px;">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 85%"></div>
+                                </div>
+                                <p class="small text-muted mb-0">
+                                    <em>Próximo Nível em:</em> <span class="text-info fw-bold">7 pontos.</span> Falta pouco para atingir o <span class="text-info fw-bold">Nível Platina Care+.</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h6 class="fw-bold text-dark mb-3">Confira seu histórico na nossa <span class="text-info">Área Care+</span></h6>
+                            <ul class="list-unstyled small mb-3">
+                                <li class="mb-2"><span class="text-info">01/09/2025</span> <span class="text-secondary">- Agendamento de consulta: Clínica Geral</span></li>
+                                <li class="mb-2"><span class="text-info">09/09/2025</span> <span class="text-secondary">- Atualização do histórico de vacina: BNT162b2</span></li>
+                                <li class="mb-2"><span class="text-info">09/09/2025</span> <span class="text-secondary">- Atualização do histórico de alergias: Camarão</span></li>
+                            </ul>
+                            <a href="tela07-extratoperfil.html" class="small text-info text-decoration-underline transition-hover d-inline-block">Veja mais do seu histórico conosco...</a>
+                        </div>
+                    </div>
+
+                    <h5 class="fw-bold mb-3" style="color: #00075F;">Saber nunca é demais:</h5>
+                    <div class="card border border-info border-opacity-25 rounded-4 p-4 shadow-sm mb-5 transition-hover" style="background-color: #f8fbff;">
+                        <div class="row align-items-center">
+                            <div class="col-md-3 text-center mb-3 mb-md-0">
+                                <i class="fa-solid fa-book-medical text-primary" style="font-size: 4.5rem;"></i>
+                            </div>
+                            <div class="col-md-9">
+                                <ul class="list-unstyled mb-0 small fw-bold">
+    <li class="mb-3">
+        <a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
+            <i class="fa-solid fa-chevron-right text-info me-2"></i> 6 maneiras de identificar se você é alérgico e 3 formas de tratar sua alergia
+        </a>
+    </li>
+    <li class="mb-3">
+        <a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
+            <i class="fa-solid fa-chevron-right text-info me-2"></i> A ciência garante: vacinas contra HPV são seguras e protegem crianças e adolescentes
+        </a>
+    </li>
+    <li class="mb-3">
+        <a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
+            <i class="fa-solid fa-chevron-right text-info me-2"></i> Check-up anual: a importância dos exames médicos regulares
+        </a>
+    </li>
+    <li class="mb-2">
+        <a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
+            <i class="fa-solid fa-chevron-right text-info me-2"></i> Tudo que você precisa saber sobre coleta de sangue
+        </a>
+    </li>
+</ul>
+                                <a href="#" class="small text-info text-decoration-underline ms-4 transition-hover d-inline-block">E mais...</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="fw-bold mb-3" style="color: #00075F;">Confira seus benefícios:</h5>
+                    
+                    <div class="d-flex gap-3 overflow-auto py-3 custom-scrollbar-x mb-2">
+                        
+                        <div class="card bg-secondary bg-opacity-75 text-white border-0 shadow-sm rounded-4 p-3 text-center d-flex flex-column justify-content-center align-items-center flex-shrink-0 transition-hover" style="width: 150px; height: 130px;">
+                            <p class="mb-2 opacity-75" style="font-size: 0.75rem;">Desbloqueie no próximo nível</p>
+                            <i class="fa-solid fa-lock fs-4"></i>
+                        </div>
+
+                        <div class="card border-0 shadow-sm rounded-4 p-3 text-center d-flex flex-column justify-content-center align-items-center flex-shrink-0 transition-hover" style="width: 150px; height: 130px; background-color: #151A40; color: white;">
+                            <p class="mb-2" style="font-size: 0.8rem;">Prioridade em horário de encaixe</p>
+                            <i class="fa-solid fa-book-open fs-4"></i>
+                        </div>
+
+                        <div class="card border-0 shadow-sm rounded-4 p-3 text-center d-flex flex-column justify-content-center align-items-center flex-shrink-0 transition-hover" style="width: 150px; height: 130px; background-color: #151A40; color: white;">
+                            <p class="mb-2" style="font-size: 0.8rem;">Desconto em medicamentos</p>
+                            <i class="fa-solid fa-pills fs-4"></i>
+                        </div>
+
+                        <div class="card border-0 shadow-sm rounded-4 p-3 text-center d-flex flex-column justify-content-center align-items-center flex-shrink-0 transition-hover" style="width: 150px; height: 130px; background-color: #151A40; color: white;">
+                            <p class="mb-2" style="font-size: 0.8rem;">Café na Clínica</p>
+                            <i class="fa-solid fa-mug-hot fs-4"></i>
+                        </div>
+
+                        <div class="card border-0 shadow-sm rounded-4 p-3 text-center d-flex flex-column justify-content-center align-items-center flex-shrink-0 transition-hover" style="width: 150px; height: 130px; background-color: #151A40; color: white;">
+                            <p class="mb-2" style="font-size: 0.8rem;">Limpeza Dental Anual</p>
+                            <i class="fa-solid fa-tooth fs-4"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4" data-perfil-sidebar data-perfil-default="medalhas">
+                
+                <div class="d-flex mb-0 px-2 perfil-tab-buttons">
+                    <button type="button" class="btn btn-light rounded-top-4 px-4 py-2 border border-bottom-0 text-muted transition-hover" data-perfil-tab="dados">Dados</button>
+                    <button type="button" class="btn btn-info text-white rounded-top-4 px-4 py-2 border-bottom-0 active fw-bold shadow-sm" style="background-color: #5d9cec; border: none;" data-perfil-tab="medalhas">Medalhas</button>
+                </div>
+
+                <div data-perfil-panel="dados" class="perfil-panel card border-0 shadow-sm rounded-4 p-4 rounded-start-0 rounded-top-0 transition-hover d-none" style="background-color: #f4f7f9;">
+                    <h4 class="fw-bold mb-4" style="color: #00075F;">Dados Pessoais</h4>
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="bg-light rounded-circle d-flex align-items-center justify-content-center me-3 shadow-sm" style="width: 75px; height: 75px;">
+                            <i class="fa-solid fa-user fs-1 text-secondary opacity-50"></i>
+                        </div>
+                        <div>
+                            <h4 class="fw-bold mb-0" style="color: #00075F;">Paciente</h4>
+                            <p class="small mb-0 fw-bold" style="color: #00075F;">CPF 123.456.789-10</p>
+                        </div>
+                    </div>
+                    <div class="card border-0 shadow-sm rounded-4 p-4 mb-4 text-white" style="background: linear-gradient(135deg, #00075F 0%, #0079C8 100%);">
+                        <div class="text-center mb-2">
+                            <h5 class="fw-bold mb-1"><i class="fa-solid fa-id-card me-2"></i>Carteira Digital</h5>
+                            <p class="small fw-bold opacity-75 m-0">Nº 0000.111.222.333-4</p>
+                        </div>
+                        <div class="text-center bg-white rounded-3 p-2 mx-auto my-3 shadow-sm" style="width: 120px; height: 120px;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg" class="img-fluid" alt="QR Code">
+                        </div>
+                        <div class="text-center mt-1">
+                            <span class="text-white small fw-bold">Mais informações <i class="fa-solid fa-circle-info ms-1"></i></span>
+                        </div>
+                    </div>
+                    <div class="list-group list-group-flush border-top border-info border-opacity-25 pt-2">
+                        <a href="#" class="list-group-item list-group-item-action bg-transparent border-bottom border-info border-opacity-25 py-3 px-1 d-flex justify-content-between align-items-center transition-hover">
+                            <div>
+                                <h6 class="fw-bold mb-1" style="color: #1E1E1E;">Informações Pessoais</h6>
+                                <p class="small text-muted mb-0">Nome completo, estado civil, nascimento...</p>
+                            </div>
+                            <i class="fa-solid fa-chevron-right text-muted opacity-50"></i>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-transparent border-bottom border-info border-opacity-25 py-3 px-1 d-flex justify-content-between align-items-center transition-hover">
+                            <div>
+                                <h6 class="fw-bold mb-1" style="color: #1E1E1E;">Documentos Digitais</h6>
+                                <p class="small text-muted mb-0">RG digital, CNH-e, Certidão de Nascimento...</p>
+                            </div>
+                            <i class="fa-solid fa-chevron-right text-muted opacity-50"></i>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 py-3 px-1 d-flex justify-content-between align-items-center transition-hover">
+                            <div>
+                                <h6 class="fw-bold mb-1" style="color: #1E1E1E;">Filiação e Dependentes</h6>
+                                <p class="small text-muted mb-0">Pais e filhos.</p>
+                            </div>
+                            <i class="fa-solid fa-chevron-right text-muted opacity-50"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div data-perfil-panel="medalhas" class="perfil-panel card border-0 shadow-sm rounded-4 p-4 rounded-start-0 rounded-top-0 transition-hover" style="background-color: #f4f7f9;">
+                    
+                    
+                    <h4 class="fw-bold text-center mb-5 mt-2" style="color: #00075F;">Conquistas Care+</h4>
+                    <hr class="text-info opacity-25 mt-0 mb-4 mx-4" style="border-width: 2px;">
+
+                    <div class="row g-4 text-center">
+                        
+                        <div class="col-6">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-2 shadow-sm transition-hover" style="width: 90px; height: 90px; background: linear-gradient(135deg, #FFE066, #FDB931); border: 4px solid white;">
+                                <i class="fa-solid fa-heart text-white fs-1 opacity-75"></i>
+                            </div>
+                            <p class="small fw-bold text-dark mb-0" style="font-size: 0.65rem;">10/10/2025 - Alcance o nível Ouro</p>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-2 shadow-sm transition-hover" style="width: 90px; height: 90px; background: linear-gradient(135deg, #e0eafc, #cfdef3); border: 4px solid white;">
+                                <i class="fa-solid fa-stopwatch text-secondary fs-1 opacity-75"></i>
+                            </div>
+                            <p class="small fw-bold text-dark mb-0" style="font-size: 0.65rem;">08/10/2025 - Pontualidade 5x!</p>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-2 shadow-sm transition-hover" style="width: 90px; height: 90px; background: linear-gradient(135deg, #fcdada, #f8baba); border: 4px solid white;">
+                                <i class="fa-solid fa-calendar-plus text-info fs-1 opacity-75"></i>
+                            </div>
+                            <p class="small fw-bold text-dark mb-0" style="font-size: 0.65rem;">01/05/2025 - Primeira Consulta</p>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-2 shadow-sm transition-hover" style="width: 90px; height: 90px; background: linear-gradient(135deg, #d4fc79, #96e6a1); border: 4px solid white;">
+                                <i class="fa-solid fa-notes-medical text-success fs-1 opacity-75"></i>
+                            </div>
+                            <p class="small fw-bold text-dark mb-0" style="font-size: 0.65rem;">27/04/2025 - Primeiro Agendamento</p>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-2 transition-hover" style="width: 90px; height: 90px; background-color: #dcdcdc; border: 4px solid #f8f9fa;">
+                                <i class="fa-solid fa-lock text-secondary fs-2 opacity-50"></i>
+                            </div>
+                            <p class="small text-muted mb-0" style="font-size: 0.65rem;">Não conquistado - 20 consultas</p>
+                        </div>
+
+                    </div>
+
+                    <div class="text-center mt-5 mb-4">
+                        <a href="#" class="text-info fw-bold text-decoration-none transition-hover d-inline-block">Ver mais <i class="fa-solid fa-chevron-down ms-1"></i></a>
+                    </div>
+
+                    <div class="text-center pt-3 border-top border-info border-opacity-25 mt-2">
+                        <a href="tela07-extratoperfil.html" class="btn btn-info text-white rounded-pill px-4 py-2 small fw-bold shadow-sm btn-care-hover mt-3 text-decoration-none">Como obter mais pontos Care+? <i class="fa-solid fa-circle-info ms-1"></i></a>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
